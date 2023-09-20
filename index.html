@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Adding Machine</title>
+	    <link rel="icon" href="assets/favicon.ico">
+
+        
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    </head>
+
+    <body>
+        <!-- Welcome message and user name input screen -->
+        <aside id="setup-bubble">
+                <h2>Welcome to: <br>My Adding Machine</h2>
+                <p>This simple site allows simple addition of two addends. You cannot do much more with it. The
+                code can be accessed by clicking the Github icon on the bottom-left calculator button. (The
+                one with the github logo on it.) When you are finished with the unparalleled pleasure of 
+                basic addition, feel free to exit.
+                </p><br>
+
+                <p>If you'd like, and it is not necessary, enter your first name and become part of the magic (Fewer than twelve 
+                    characters, if you please): </p>
+                <br>
+
+                <form>
+                    <input type="text" id="user-name-input">
+                    <div id="intro-button">Continue</div>
+                </form>
+
+        </aside>
+
+        <!-- Main page of adding machine -->
+        <div id="site-content">
+            <header id="top">
+                <div class="emoji">&#128224;</div>
+                <div id="calc-head-center">                                                           
+                    <p><span class="user-name">My</span>&nbsp;&nbsp;Adding&nbsp;&nbsp;Machine</p>
+                    <div class="lines"></div> 
+                    <p id="invisible">&nbsp;&nbsp;<span class="user-name">My</span>&nbsp;&nbsp;Adding&nbsp;&nbsp;Machine&nbsp;&nbsp;</p>
+                </div>
+                <div class="emoji">&#128224;</div>
+            </header>
+
+            <main>
+                <div id="calc-screen"></div>
+                <button class="num-button" id="one">1</button>
+                <button class="num-button" id="two">2</button>
+                <button class="num-button" id="three">3</button>
+                <button id="clear">C</button>
+                <button class="num-button" id="plus">&plus;</button>
+                <button class="num-button" id="four">4</button>
+                <button class="num-button" id="five">5</button>
+                <button class="num-button" id="six">6</button>
+                <button class="num-button" id="seven">7</button>
+                <button class="num-button" id="eight">8</button>
+                <button class="num-button" id="nine">9</button>
+                <button class="num-button double-wide" id="zero">0</button>  
+                <button class="double-wide" id="equal">&equals;</button>
+                <button class="double-wide" id="github"><i class="fa-brands fa-github"></i>
+                    <span id="tooltip">See the code!</span></button>
+                <button class="double-wide" id="exit">Exit</button> 
+            </main>
+
+            <footer id="bottom">
+                <p>&copy; 2023 - Stephen Moss </p>
+                <div class="lines"></div> 
+            </footer>
+        </div>
+
+        <!-- Goodbye message with Adam Scott -->
+        <aside id="goodbye">
+            Alright, well... Thank you and . . .
+            <img src="./assets/calc_u_later.gif" alt="Ben Wyatt from Parks &amp; Recreation makes a pun">
+        </aside>  
+
+
+        <script src="./script/script.js"></script>
+    </body>
+</html>
